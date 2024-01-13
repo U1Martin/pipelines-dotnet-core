@@ -1,8 +1,117 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
 <div class="text-center">
-    <h1 class="display-4">This is a new main page</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Video Distribution System</h1>
+//    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+//    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asset Track</title>
+      <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+      <script type="text/javascript" src="JS/bootstrap.js"></script>
+      <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="JS/app.js"></script>
+  </head>
+  
+  <body>
+    <div  class="container">
+
+        <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+            <div class="col-8" style="text-align: center;">
+              <h3>Image Share</h3>
+            </div>
+            <div class="col-2"  ></div>
+        </div>
+
+        <!--New Asset Box-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+            <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+              <p>Add Image</p>
+
+              <form style="font-size: 10pt;" id="newAssetForm">
+                <div class="mb-3">
+                  <label for="frmVidID" class="form-label">Video Id</label>
+                  <input type="text" class="form-control" id="frmVidID">
+                </div>
+
+                <div class="mb-3">
+                  <label for="frmVidTitle" class="form-label">Video Title</label>
+                  <input type="string" class="form-control" id="frmVidTitle">
+                </div>
+
+                <div class="mb-3">
+                  <label for="vidProducer" class="form-label">Producer</label>
+                  <input type="text" class="form-control" id="vidProducer">
+                </div>
+
+                <div class="mb-3">
+                  <label for="vidPublisher" class="form-label">Publisher</label>
+                  <input type="string" class="form-control" id="vidPublisher">
+		</div>
+
+                
+                <div class="mb-3">
+                  <label for="vidGenre" class="form-label">Genre</label>
+                  <input type="text" class="form-control" id="vidGenre">
+                </div>
+
+                <div class="mb-3">
+                  <label for="vidRating" class="form-label">Video Rating</label>
+                  <input type="string" class="form-control" id="vidRating">
+                </div>
+
+                <div class="mb-3">
+                  <label for="vidRelease" class="form-label">Release Date</label>
+                  <input type="string" class="form-control" id="vidRelease">
+                </div>
+
+                <div class="mb-3">
+                  <label for="vidAdded" class="form-label">Added to Site</label>
+                  <input type="text" class="form-control" id="vidAdded">
+                </div>
+
+                <div class="mb-3">
+                  <label for="UpFile" class="form-label">File to Upload</label>
+                  <input type="file" class="form-control" id="UpFile">
+                </div>
+            
+                <button type="button" id="subNewForm" class="btn btn-primary">Submit</button> <br/><br/>
+                
+              </form>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+        <!-- view Asset Area-->
+        <div class="row align-items-start">
+            <div class="col-2"  ></div>
+
+            <div class="col-8" style="text-align: left;" >
+              <div style="padding:5px;">
+                <button  id = "retImages" type="button" class="btn btn-primary">View Videos</button>
+              </div>
+
+              <div id="ImageList">
+
+                <h4>Please click view Video button for a list of Videos.</h4>
+
+              </div>
+            </div>
+
+            <div class="col-2"  ></div>
+        </div>
+
+    </div>
+  
+  </body>
+</html>
