@@ -1,15 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+
 <!doctype html>
 <html lang="en" ng-app="Dashboard">
-<div class="text-center">
-    <h1 class="display-4">Video Distribution System</h1>
-//    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-//    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Asset Track</title>
       <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
@@ -19,14 +14,18 @@
       <script type="text/javascript" src="JS/app.js"></script>
   </head>
   
-  <body>
+<div class="text-center">
+    <h1 class="display-4">Video Distribution System</h1>
+</div>
+
+  <body>  
     <div  class="container">
 
         <!--Header-->
         <div class="row align-items-start">
             <div class="col-2"  ></div>
             <div class="col-8" style="text-align: center;">
-              <h3>Image Share</h3>
+              <h3>Video Distribution System</h3>
             </div>
             <div class="col-2"  ></div>
         </div>
@@ -35,17 +34,17 @@
         <div class="row align-items-start">
             <div class="col-2"  ></div>
             <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
-              <p>Add Image</p>
+              <p>Add a New Video</p>
 
               <form style="font-size: 10pt;" id="newAssetForm">
                 <div class="mb-3">
-                  <label for="frmVidID" class="form-label">Video Id</label>
-                  <input type="text" class="form-control" id="frmVidID">
+                  <label for="vidID" class="form-label">Video Id</label>
+                  <input type="text" class="form-control" id="vidID">
                 </div>
 
                 <div class="mb-3">
-                  <label for="frmVidTitle" class="form-label">Video Title</label>
-                  <input type="string" class="form-control" id="frmVidTitle">
+                  <label for="vidTitle" class="form-label">Video Title</label>
+                  <input type="string" class="form-control" id="vidTitle">
                 </div>
 
                 <div class="mb-3">
